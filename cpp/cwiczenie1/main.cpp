@@ -2,17 +2,31 @@
 
 using namespace std;
 
+
 int main(){
-	int t[4]={13,499,58,6};
-int x= 4;
-for (int i=0; i<4; ++i){
-if (t[i]>x){
-std:: cout << t[i] << "jest wieksze od" << x  << std::endl;
-} else if (t[i] < x){
-std:: cout << t[i] << "jest mniejsze od" << x << std::endl;
-}else {
-std:: cout << t[i] << "jest rowne" << x << std::endl;
-}
-}
+	int a=0;
+	int b=0;
+	int c=0;
+	int d=0;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	cin<<d;
+	int t[4]={a,b,c,d};
+	int x= 0;
+	for (int i=0; i<4; ++i){
+		for(int x2=0; x2<4; x2++) {
+			if (t[x] >t[x2] ) {
+					int b2;
+					b2=t [x];
+					t[x] =t[x2];
+					t[x2]=b2;
+				}
+			}
+		}
+	cout<<t[0];
+	cout<<t[1];
+	cout<<t[2];
+	cout<<t[3];
 	return 0;
 }
