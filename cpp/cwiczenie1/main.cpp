@@ -4,29 +4,27 @@ using namespace std;
 
 
 int main(){
-	int a=0;
-	int b=0;
-	int c=0;
-	int d=0;
-	cin>>a;
-	cin>>b;
-	cin>>c;
-	cin<<d;
-	int t[4]={a,b,c,d};
-	int x= 0;
-	for (int i=0; i<4; ++i){
-		for(int x2=0; x2<4; x2++) {
-			if (t[x] >t[x2] ) {
-					int b2;
-					b2=t [x];
-					t[x] =t[x2];
-					t[x2]=b2;
-				}
-			}
-		}
-	cout<<t[0];
-	cout<<t[1];
-	cout<<t[2];
-	cout<<t[3];
+int a<101;
+
+
+    
+int t[10];
+for (int x=0; x<101; x = x+2)
+
+
+
+
+
+for (int x=0; x<10; x++){
+for(int x2=0; x2<10; x2++) {
+if (t[x]>t[x2]) {
+int b2;
+b2=t[x];
+t[x]=t[x2];
+t[x2]=b2;
+}
+}
+}
+cout<<t[101];
 	return 0;
 }
