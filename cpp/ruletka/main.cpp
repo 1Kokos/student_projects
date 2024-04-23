@@ -2,27 +2,27 @@
 #include <cstdlib>
 #include <ctime>
 
-
+using namespace std;
 int main(){
-	std::srand(static_cast<unsigned int>(std::time(nullptr)));
+	srand(time(nullptr));
 
 int wybranaLiczba;
 
-std::cout<<"wybierz liczbe od 1 do 10:";
-std::cin>>wybranaLiczba;
+cout<<"wybierz liczbe od 1 do 10:";
+cin>>wybranaLiczba;
 
 if(wybranaLiczba<1 || wybranaLiczba>10){
-std::cerr<<"blad: wybrano liczbe spoza zakresu" << std::endl;
+cout<<"blad: wybrano liczbe spoza zakresu" << endl;
 return 1;
 }
-int wylosowanaLiczba = std::rand() % 10 + 1;
+int wylosowanaLiczba = rand() % 10 + 1;
 
-std::cout<<"Program wylosował liczbe:" <<wylosowanaLiczba << std::endl;
+cout<<"Program wylosował liczbe:" <<wylosowanaLiczba << endl;
 
 if (wybranaLiczba == wylosowanaLiczba) {
-std::cout << "przegrałeś" << std::endl;
+cout << "przegrałeś" << endl;
 } else {
-std::cout << "brawo przeżyłeś" << std::endl;
+cout << "brawo przeżyłeś" << endl;
 }
 	return 0;
 }

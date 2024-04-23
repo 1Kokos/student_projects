@@ -1,30 +1,28 @@
 #include <iostream>
 
+
 using namespace std;
+int main() {
+int liczby[5];
+cout<<"podaj 5 liczb";
+for(int i=0; i<5;i++) {
+cin>>liczby[i];
+}
 
-
-int main(){
-int a<101;
-
-
-    
-int t[10];
-for (int x=0; x<101; x = x+2)
-
-
-
-
-
-for (int x=0; x<10; x++){
-for(int x2=0; x2<10; x2++) {
-if (t[x]>t[x2]) {
-int b2;
-b2=t[x];
-t[x]=t[x2];
-t[x2]=b2;
+for(int i=0; i<5; i++) {
+for(int j=i+1; j<5; j++) {
+if(liczby[i] > liczby[j]){
+swap(liczby[i], liczby[j]);
 }
 }
 }
-cout<<t[101];
-	return 0;
+
+cout<<"po sortowaniu: ";
+for(int i = 0; i < 5; i++) {
+cout << liczby[i]<<" ";
+}
+cout << endl;
+
+
+return 0;
 }
